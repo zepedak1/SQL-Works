@@ -1,0 +1,23 @@
+CREATE TABLE clothing_store(id INTEGER PRIMARY KEY, item TEXT, area TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO clothing_store VALUES(1, " Blue Shirt", 15, 20, 13.99);
+INSERT INTO clothing_store VALUES(2, "Red Shirt", 15, 15, 13.99);
+INSERT INTO clothing_store VALUES(3, "Yellow Shirt", 15, 22, 13.99);
+INSERT INTO clothing_store VALUES(4, "Purple Shirt", 15, 13, 13.99);
+INSERT INTO clothing_store VALUES(5, "Green Shirt", 15, 17, 13.99);
+
+INSERT INTO clothing_store VALUES(6, "Blue Pants", 12, 20, 19.99);
+INSERT INTO clothing_store VALUES(7, "Red Pants", 12, 13, 19.99);
+INSERT INTO clothing_store VALUES(8, "Yellow Pants", 12, 18, 19.99);
+INSERT INTO clothing_store VALUES(9, "Purple Pants", 12, 16, 19.99);
+INSERT INTO clothing_store VALUES(10, "Green Pants", 12, 20, 19.99);
+
+INSERT INTO clothing_store VALUES(11, "Blue Hat", 17, 13, 9.99);
+INSERT INTO clothing_store VALUES(12, "Red Hat", 17, 16, 9.99);
+INSERT INTO clothing_store VALUES(13, "Yellow Hat", 17, 12, 9.99);
+INSERT INTO clothing_store VALUES(14, "Purple Hat", 17, 2, 9.99);
+INSERT INTO clothing_store VALUES(15, "Green Hat", 17, 30, 9.99);
+
+SELECT * FROM clothing_store ORDER BY price;
+
+SELECT SUM(price) FROM clothing_store;
